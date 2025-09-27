@@ -15,6 +15,16 @@ import {
   ExternalLink
 } from 'lucide-react'
 
+// Generate static params for deployment
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' }
+  ];
+}
+
 export default function PurchasePage() {
   const [step, setStep] = useState(1) // 1: Purchase, 2: IP Setup, 3: Complete
   const [ipAddress, setIpAddress] = useState('')

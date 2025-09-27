@@ -5,6 +5,16 @@ import { ArrowLeft, Star, Download, Shield, Clock, Users, Check, AlertCircle } f
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
+// Generate static params for deployment
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' }
+  ];
+}
+
 interface ModDetailPageProps {
   params: { id: string };
 }
